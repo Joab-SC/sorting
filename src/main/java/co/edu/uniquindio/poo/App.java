@@ -15,11 +15,32 @@ public class App {
 
         System.out.println("Before: ");
         printArray(numbers);
+
+
+        boolean algunCambio = true;
+
+        while(algunCambio){
+            algunCambio = false;
+            for(int i = 0; i < numbers.length - 1; i ++){
+                if(numbers[i] > numbers[i + 1]){
+                    algunCambio = true;
+                    int temp = numbers[i];
+                    numbers[i] = numbers[i + 1];
+                    numbers[i + 1] = temp;
+                }
+            }
+        }
+        
+
+        System.out.println("\nAfter: ");
+        printArray(numbers);
     }
+
+
 
     public static void printArray(int[] array){
         for(int i = 0; i < array.length; i ++){
-            System.out.print(array[i] + " - ");
+            System.out.println(array[i]);
         }
 
     }
