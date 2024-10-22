@@ -27,6 +27,7 @@ public class App {
                     int temp = numbers[i];
                     numbers[i] = numbers[i + 1];
                     numbers[i + 1] = temp;
+                    System.out.println(numbers[1]);
                 }
             }
         }
