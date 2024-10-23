@@ -27,13 +27,13 @@ public class App {
                     int temp = numbers[i];
                     numbers[i] = numbers[i + 1];
                     numbers[i + 1] = temp;
-                    System.out.println(numbers[1]);
+                    bubbleSort.mostrarMensaje("" + numbers[1]);
                 }
             }
         }
         
 
-        System.out.println("\nAfter: ");
+        bubbleSort.mostrarMensaje("\nAfter: ");
         printArray(numbers);
     }
 
@@ -41,7 +41,7 @@ public class App {
 
     public static void printArray(int[] array){
         for(int i = 0; i < array.length; i ++){
-            System.out.println(array[i]);
+            bubbleSort.mostrarMensaje("" + array[i]);
         }
 
     }
